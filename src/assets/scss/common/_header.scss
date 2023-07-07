@@ -1,0 +1,23 @@
+.navbar-brand {
+    max-width: 150px;
+    img{
+        width: 100%;
+        height: 58px;
+        object-fit: contain;
+    }
+}
+
+.nav-item {
+    margin: 0 8px;
+    .nav-link {
+        font-size: $font-18;
+        line-height: 22px;
+        font-weight: $weight-500;
+        color: $black-color;
+        @include transition;
+        &:hover{
+            color: $secondary-color;
+            @include transition;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.title {
+    color: $secondary-color;
+}
+
+
+// buttons
+.btn {
+    font-size: $font-16;
+    line-height: 20px;
+    font-weight: $weight-500;
+    border-color: transparent;
+    padding: 10px 15px;
+    border-radius: $border-rd-20;
+    -webkit-border-radius: $border-rd-20;
+    -moz-border-radius: $border-rd-20;
+    -ms-border-radius: $border-rd-20;
+    -o-border-radius: $border-rd-20;
+    @include boxshadow;
+}
+
+.btn-primary {
+    background: $secondary-color;
+    color: $white-color;
+    &:hover {
+        background: darken($secondary-color, 10%);
+        border-color: $secondary-color;
+    }
+}
+
