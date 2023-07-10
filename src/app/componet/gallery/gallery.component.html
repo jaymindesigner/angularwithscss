@@ -1,1 +1,10 @@
-<p>gallery works!</p>
+<div class="container my-5">
+  <h3 class="title text-capitalize mb-3">gallery</h3>
+  <div class="gallerize-example">
+    <div class="row g-4" gallerize>
+      <div class="col col-lg-4 g-box" *ngFor="let img of imageData">
+        <img [src]="img.srcUrl" />
+      </div>
+    </div>
+  </div>
+</div>
