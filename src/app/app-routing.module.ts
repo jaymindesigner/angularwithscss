@@ -4,6 +4,7 @@ import { HomeComponent } from './component/home/home.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ChildaComponent } from './pages/childa/childa.component';
 
 const routes: Routes = [
   {
@@ -15,8 +16,14 @@ const routes: Routes = [
     component: GalleryComponent,
   },
   {
-    path: 'about',
+    path: 'about/:id',
     component: AboutComponent,
+    children: [
+      {
+        path: 'childa',
+        component: ChildaComponent,
+      },
+    ],
   },
   {
     path: 'contact',
@@ -26,6 +33,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

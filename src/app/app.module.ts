@@ -20,6 +20,7 @@ import {
 } from 'ng-gallery';
 import { LightboxModule, Lightbox } from 'ng-gallery/lightbox';
 import { FooterComponent } from './component/footer/footer.component';
+import { ChildaComponent } from './pages/childa/childa.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FooterComponent } from './component/footer/footer.component';
     AboutComponent,
     ContactComponent,
     ModalComponent,
-    FooterComponent
+    FooterComponent,
+    ChildaComponent
   ],
   imports: [
   BrowserModule,
