@@ -33,7 +33,7 @@ import { FooterComponent } from './component/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule,
+  BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     NgbModule,
