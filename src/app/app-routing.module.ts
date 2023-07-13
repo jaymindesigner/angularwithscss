@@ -16,14 +16,14 @@ const routes: Routes = [
     component: GalleryComponent,
   },
   {
-    path: 'about/:id',
+    path: 'about',
     component: AboutComponent,
-    children: [
-      {
-        path: 'childa',
-        component: ChildaComponent,
-      },
-    ],
+    // children: [
+    //   {
+    //     path: 'childa',
+    //     component: ChildaComponent,
+    //   },
+    // ],
   },
   {
     path: 'contact',
